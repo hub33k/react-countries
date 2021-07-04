@@ -31,7 +31,7 @@ const ContinentsPage: FC = () => {
     <>
       {continents.length ? (
         <>
-          <ul>
+          <ul className="continents-list">
             {continents.map((continent: Continent) => {
               return (
                 <li key={continent.code}>

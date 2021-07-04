@@ -1,0 +1,28 @@
+$global-width: rem-calc(1000);
+
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-position: 1rem;
+$global-radius: 0;
+
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+
+$global-text-direction: ltr;
+
+// Internal variables used for text direction
+$global-left: if($global-text-direction == rtl, right, left);
+$global-right: if($global-text-direction == rtl, left, right);
+
+$global-button-cursor: auto;
+
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);

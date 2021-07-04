@@ -1,0 +1,7 @@
+/* 8-debug.debug.scss */
+
+@if $DEBUG {
+  * {
+    transition: all 300ms ease-in-out;
+  }
+}

@@ -42,27 +42,20 @@ const CountriesPage: FC = () => {
     <>
       {countries.length ? (
         <>
-          <h2>
+          <h2 className="page-title">
             Listing countries from {continentName} ({code})
           </h2>
 
-          <ul>
+          <ul className="countries-list">
             {countries.map((country: Country) => {
               return (
-                <li
-                  key={country.emoji}
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    marginBottom: '1rem',
-                  }}
-                >
+                <li key={country.emoji}>
                   <span>Name: {country.name}</span>
                   <span>Emoji: {country.emoji}</span>
                   {country.languages.length ? (
-                    <span>{country.languages[0].name}</span>
+                    <span>Language: {country.languages[0].name}</span>
                   ) : (
-                    <span>Language: No data</span>
+                    <span style={{ color: '#ff5722' }}>Language: No data</span>
                   )}
                 </li>
               );

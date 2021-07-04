@@ -1,0 +1,8 @@
+// URLs
+$ROOT_URL: '/';
+$STATIC_URL: '#{$ROOT_URL}assets';
+$FONTS_URL: '#{$STATIC_URL}/fonts';
+$IMAGES_URL: '#{$STATIC_URL}/images';
+$SVG_URL: '#{$IMAGES_URL}/svg';
+
+$DEBUG: false;

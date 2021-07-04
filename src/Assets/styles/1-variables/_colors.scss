@@ -1,0 +1,18 @@
+@use "sass:map";
+
+$color-black: #0a0a0a;
+$color-white: #ffffff;
+
+$color-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+$color-primary: map.get($color-palette, primary);
+$color-secondary: map-get($color-palette, secondary);
+$color-success: map-get($color-palette, success);
+$color-warning: map-get($color-palette, warning);
+$color-alert: map-get($color-palette, alert);

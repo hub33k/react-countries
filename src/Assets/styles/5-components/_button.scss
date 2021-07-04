@@ -1,0 +1,24 @@
+/* 5-components.button */
+
+$button-color: #666;
+$button-border-color: #ccc;
+$button-border-color-hover: #999;
+
+button,
+.button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+
+  border: 0.0625em solid $button-border-color;
+  border-radius: 0.1875em;
+
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  color: $button-color;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $button-border-color-hover;
+  }
+}

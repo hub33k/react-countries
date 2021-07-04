@@ -1,0 +1,24 @@
+/* 4-elements.body */
+
+$body-background: $color-white;
+$body-font-color: $color-black;
+$body-font-family: $font-sans;
+$body-antialiased: true;
+
+// Default body styles
+body {
+  margin: 0;
+  padding: 0;
+
+  background: $body-background;
+
+  font-family: $body-font-family;
+  font-weight: $global-weight-normal;
+  line-height: $global-lineheight;
+  color: $body-font-color;
+
+  @if ($body-antialiased) {
+    -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  }
+}

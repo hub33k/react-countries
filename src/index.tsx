@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import client from './Config/graphqlClient';
 import App from './Components/App';
+import './Assets/styles/main.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

@@ -1,0 +1,13 @@
+/* 3-generic.base */
+
+html {
+  box-sizing: border-box;
+  font-size: $global-font-size;
+}
+
+// Set box-sizing globally to handle padding and border widths
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

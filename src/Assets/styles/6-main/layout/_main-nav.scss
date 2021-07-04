@@ -1,0 +1,27 @@
+/* 6-main.layout.main-nav */
+
+.page-main-nav {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      line-height: 1;
+      text-decoration: none;
+      color: $color-white;
+
+      background-color: $color-primary;
+
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
+    }
+  }
+}

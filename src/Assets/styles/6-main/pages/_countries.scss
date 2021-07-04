@@ -1,0 +1,14 @@
+/* 6-main.pages.countries */
+
+.countries-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #757575;
+    padding: .5rem;
+  }
+}

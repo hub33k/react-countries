@@ -1,0 +1,27 @@
+/* 6-main.pages.continents */
+
+.continents-list {
+  display: flex;
+  flex-direction: column;
+  width: rem-calc(500);
+  margin: 0 auto;
+  border: 1px solid #757575;
+
+  li {
+    a {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      color: #0a0a0a;
+      text-align: center;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+  }
+}

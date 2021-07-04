@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const HomePage: FC = () => {
   return (
     <>
-      <Link to="/continents">Continents list</Link>
+      <Link to="/continents" className="button">
+        Continents list
+      </Link>
     </>
   );
 };
