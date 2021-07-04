@@ -15,6 +15,7 @@ const App: FC = () => {
         <Route path="/continents/:code" element={<CountriesPage />} />
 
         <Route path="404" element={<NotFoundPage />} />
+        <Route path="react-countries" element={<Navigate to="/" />} />
         <Route path="*" element={<Navigate to="/404" />} />
       </Layout>
     </Routes>
