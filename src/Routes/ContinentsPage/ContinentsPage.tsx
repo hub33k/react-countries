@@ -25,7 +25,7 @@ const ContinentsPage: FC = () => {
       .catch((err) => {
         console.error(err);
       });
-  }, [continents]);
+  }, []);
 
   return (
     <>
