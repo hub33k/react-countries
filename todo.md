@@ -1,0 +1,2 @@
+- [ ] hook from apollo client
+- [ ] invalid routes (like `/continents/ASD`)
